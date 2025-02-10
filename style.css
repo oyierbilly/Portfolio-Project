@@ -1,0 +1,624 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:Courier, monospace;
+	box-sizing:border-box;
+	color: var(--secondary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode-specific styles */
+}
+
+:root{
+	
+	--primary-color:#edf2fc;
+	--secondary-color:#212121;
+}
+.dark-theme{
+	--primary-color:#000106;
+	--secondary-color:#fff;
+	transition: 0.9s;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background: var(--primary-color);
+	color:var(--primary-color);
+	font-family: Courier, monospace;
+}
+
+.container{
+	padding: 10px 10%;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px; /* Adjust height as needed */
+    background-color: var(--primary-color);
+    padding-top: 0;
+    margin: 0; /* Remove any default margin */
+}
+
+#icon{
+	width: 30px;
+	cursor:pointer;
+}
+
+.logo a{
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 50px;
+	color: var(--secondary-color);
+	font-family: cursive;
+}
+
+.logo span{
+	color: cyan;
+}
+nav ul{
+	flex:1;
+	text-align: right;
+	margin-top:0.3px;
+	font-family: cursive;
+	padding-right: 10px;
+}
+nav img{
+	margin-top:-5px;
+	padding-right: 40px;
+}
+nav p{
+	margin-top:-5px;
+	padding-left: 40px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a{
+	color: var(--secondary-color);
+	text-decoration: none;
+	font-size: 22px;
+	position: relative;
+}
+
+nav ul li a::after{
+	content:'';
+	width: 0;
+	height: 3px;
+	background: cyan;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+.header-text{
+	margin-top: 8%;
+	font-size: 30px;
+	padding-top: 20px;
+	font-family: cursive;
+}
+
+.header-text h2{
+	color: var(--secondary-color);
+	font-family: cursive;
+	font-size: 35px;
+	font-weight: bold;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.header-text h1{
+	color: var(--secondary-color);
+	font-size: 60px;
+	margin:auto;
+	padding: 0;
+}
+
+.header-text h1 span{
+	color:cyan;
+}
+
+/*about*/
+#about{
+	padding: 80px 0;
+	color:#ababab;
+}
+
+.container {
+	padding-top: 55px;
+	margin-top: 50px;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about-col-1{
+	flex-basis: 25%;
+}
+
+.about-col-1 img{
+	width:100%;
+	border-radius: 15px;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+
+.about-col-1:hover img{
+	transform: scale(1.1);
+}
+
+.about-col-2{
+	flex-basis: 65%;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.sub-title{
+	font-size: 60px;
+	font-weight: 600 ;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: var(--secondary-color);
+}
+
+.about-col-2 p{
+	font-size: 22px;
+	color: var(--secondary-color);
+	font-family: cursive;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.tab-titles{
+	display: flex;
+	margin: 20px 0 40px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+.tab-titles p{
+	font-family:cursive;
+}
+
+.tab-links{
+	margin-right:50px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+}
+
+.tab-links::after{
+	content:'';
+	width: 0;
+	height: 3px;
+	background: cyan;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+	width: 50%;
+}
+
+.tab-contents {
+	margin-top: 5px;
+}
+
+.tab-contents ul li{
+	list-style: none;
+	margin: 5px 0 0 -40px;
+	font-size: 18px;
+	color: var(--secondary-color);
+	font-family:cursive;
+}
+
+.tab-contents ul li span{
+	color: cyan;
+	font-size: 20px;
+}
+
+.tab-contents{
+	display: none;
+}
+
+.tab-contents.active-tab{
+	display: block;
+}
+
+
+#portfolio{
+	padding: -50px 0;
+	padding-top: 30px;
+}
+
+#work{
+	padding: -50px 0;
+	padding-top: 30px;
+}
+
+.work-list{
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+
+.work{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.work img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+	transition:transform 0.5s;
+}
+
+.layer{
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(rgba(0,0,0,0.6), cyan);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 0px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 18px;
+	transition: height 0.5s;
+	color: var(--secondary-color);
+	color: white;
+}
+
+.layer h3{
+	font-weight: 18px;
+	margin-bottom: 20px;
+}
+
+.work:hover img{
+	transform: scale(1.1);
+}
+
+.work:hover .layer{
+	height: 100%;
+}
+
+.btn{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid var(--secondary-color);
+	padding: 14px 50px;
+	margin-left: 0px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: var(--secondary-color);
+	transition:0.5s;
+	font-family: cursive;
+	font-size: 18px;
+	transform: translateY(5px);
+	cursor: pointer;
+}
+
+.btn-1{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid var(--secondary-color);
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: var(--secondary-color);
+	transition:0.5s;
+	font-family: cursive;
+	font-size: 18px;
+	transform: translateY(5px);
+	cursor: pointer;
+	background-color: var(--primary-color);
+	margin-top: 5px;
+}
+
+.btn-1:hover{
+	background:cyan;
+	transition: transform 0.5s;
+}
+
+.btn:hover{
+	background:cyan;
+	transition: transform 0.5s;
+}
+
+.contact-left{
+	flex-basis: 40%;
+	padding: 50px 0;
+}
+
+.contact-right{
+	flex-basis: 60%;
+	padding: 60px 0;
+}
+
+.contact-left p{
+	margin-top: 30px;
+	color: var(--secondary-color);
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.contact-left a:hover{
+	transform: translateY(-5px);
+}
+
+
+.contact-left p i{
+	color:var(--secondary-color);
+	margin-right:15px;
+	font-size: 25px;
+	transition: 0.5s;
+}
+.contact-left p a{
+	text-decoration: none;
+	color: var(--secondary-color);
+	transition: 0.5s;
+	font-family: cursive;
+	font-size: 20px;
+	transform: translateY(-5px);
+}
+.contact-left p a i:hover{
+	color: cyan;
+	transform: translateY(-5px);
+}
+
+.social-icons{
+	margin-top: 30px;
+}
+
+.social-icons a{
+	text-decoration: none;
+	font-size: 30px;
+	margin-right: 15px;
+	color: #ababab;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+	color: cyan;
+	transform: translateY(-5px);
+}
+
+
+.contact-right form{
+	width: 100%;
+}
+form input, form textarea{
+	width: 100%;
+	border: 0;
+	outline: none;
+	background:var(--secondary-color);
+	padding: 15px;
+	margin: 15px 0;
+	font-size: 18px;
+	border-radius: 6px;
+}
+input[type="text"] {
+  color: var(--primary-color);
+}
+input[type="email"] {
+  color: var(--primary-color);
+}
+textarea{
+  color: var(--primary-color);
+}
+
+#main-footer{
+	background:var(--secondary-color);
+	color: #fff;
+	text-align: center;  
+	padding: 20px;
+	margin-top: 40px;
+}
+
+#main-footer p{
+	color: var(--secondary-color);
+	font-size: 19px;
+	color:var(--primary-color);
+	font-family: cursive;
+}
+
+nav .fas{
+	display: none;
+}
+
+/* For Webkit based browsers (Google Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* You can adjust the width as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightgray; /* Change this to your desired dark background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Change this to your desired dark color for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Change this to your desired color when the scrollbar handle is hovered */
+}
+
+
+@media only screen and (max-width:600px){
+	/* For Webkit based browsers (Google Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* You can adjust the width as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-color); /* Change this to your desired dark background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Change this to your desired dark color for the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Change this to your desired color when the scrollbar handle is hovered */
+}
+	#header{
+		background-color: var(--primary-color);
+	}
+	.header-text h2{
+		margin-top: 25px;
+		font-size: 16px;
+	} 
+	.header-text h1{
+		font-size: 30px;
+		padding-top: 15px;
+	}
+	nav .fas{
+		display: block;
+		font-size: 25px;
+		color: var(--secondary-color);
+		cursor: pointer;
+		padding-right: 25px;
+		margin-top:-10px;
+	}
+	nav img{
+		padding-left: 125px;
+		margin-top:-10px;
+	}
+	nav p{
+		margin-top:-10px;
+	}
+	
+	nav ul{
+		background: cyan;
+		position: fixed;
+		top: 0;
+		right: 200%;
+		width: 190px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin: 25px;
+	}
+	nav ul .fas{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+	.sub-title{
+		font-size: 40px;
+	}
+	.about-col-1, .about-col-2{
+		flex-basis: 100%;
+	}
+	.about-col-1{
+		margin-bottom: 30px;
+	}
+	.about-col-2{
+		font-size: 14px;
+	}
+	.tab-links{
+		font-size: 16px;
+		margin-right: 20px;
+	}
+	.contact-left, .contact-right{
+		flex-basis: 100%;
+	}
+	.contact-right{
+		padding-bottom: 70px;
+	}
+	#main-footer{
+		font-size:14px;
+		color: var(--primary-color);
+	}
+}
+#msg{
+	color: cyan;
+	margin-top:-10px;
+	display: block;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
