@@ -4,6 +4,7 @@ body{
 	font-family:Courier, monospace;
 	box-sizing:border-box;
 	color: var(--secondary-color);
+	overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -137,6 +138,11 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
 	color:cyan;
+}
+
+.header-image img {
+	width: 80vh;
+	height: auto;
 }
 
 /*about*/
