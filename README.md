@@ -2,7 +2,7 @@
 
 - This is a simple Node.js app that serves my portfolio HTML file on Amazon Web Services (AWS), making it a great way to test and experiment with cloud deployments.
 
-## Tech Stack Highlights:
+## Tech Stack Highlights
 
  1. HTML & CSS: User-friendly and responsive front-end.
  2. Node.js: Backend logic and contact form handling.
@@ -57,7 +57,7 @@
     git clone https://github.com/oyierbilly/Portfolio-Project.git
     ```
   
-Confirm if your repository has been cloned by using the command below:
+- Confirm if your repository has been cloned by using the command below:
     ```bash
     ls -ltr
     ```
