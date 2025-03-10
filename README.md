@@ -1,5 +1,6 @@
 #Cloud Portfolio Project
-This is a simple Node.js app that serves my portfolio HTML file on Amazon Web Services (AWS), making it a great way to test and experiment with cloud deployments.
+
+- This is a simple Node.js app that serves my portfolio HTML file on Amazon Web Services (AWS), making it a great way to test and experiment with cloud deployments.
 
 ##Features
 - HTML and CSS for the user interface (UI).
