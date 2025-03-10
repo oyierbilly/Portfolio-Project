@@ -8,12 +8,12 @@
 - MongoDB to store the data from the contact form.
 - Hosted on AWS EC2 for easy access and public availability.
 
-After launching and connecting to your AWS EC2 instance, follow the following steps:
+- After launching and connecting to your AWS EC2 instance, follow the following steps:
 
 ##Step 1: Installing NodeJS and NPM on EC2
-Install nvm by typing the following on the EC2 command line.
-sudo su -
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+- Install nvm by typing the following on the EC2 command line.
+``` sudo su -
+``` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 
 Activate nvm by typing the following on the command line.
 . ~/.nvm/nvm.sh
