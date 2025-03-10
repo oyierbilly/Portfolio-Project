@@ -2,7 +2,15 @@
 
 - This is a simple Node.js app that serves my portfolio HTML file on Amazon Web Services (AWS), making it a great way to test and experiment with cloud deployments.
 
-##Features
+## Tech Stack Highlights:
+
+ 1. HTML & CSS: User-friendly and responsive front-end.
+ 2. Node.js: Backend logic and contact form handling.
+ 3. MongoDB: Database for storing contact form data.
+ 4. GitHub: Repository hosting
+ 5. AWS EC2: Hosting the application for global access.
+    
+## Features
 - HTML and CSS for the user interface.
 - A Node.js backend to handle form submissions and data storage.
 - MongoDB to store the data from the contact form.
