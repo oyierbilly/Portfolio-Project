@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require('path');
 const bodyParser = require("body-parser");
+const http = require('http');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -36,6 +37,8 @@ app.post("/", function(req, res) {
     res.redirect('/');
 })
 
-app.listen(3000, function() {
-    console.log("Server is running on 3000")
-})
+const server = http.createServer(app);
+
+server.listen(3000, function() {
+    console.log('Check 3000.')
+});
