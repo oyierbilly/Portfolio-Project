@@ -3,6 +3,7 @@
 *{
 	font-family: "Libre Franklin", sans-serif;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -53,7 +54,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 70px;
+    height: 80px;
     background-color: var(--primary-color);
     padding-top: 0;
     margin: 0; 
@@ -69,18 +70,14 @@ nav {
 	font-weight: bolder;
 	font-size: 50px;
 	color: var(--secondary-color);
-	font-family: cursive;
-}
-
-.logo span {
-	color: cyan;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 nav ul {
 	flex:1;
 	text-align: right;
 	margin-top:0.3px;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	padding-right: 10px;
 }
 
@@ -111,7 +108,7 @@ nav ul li a::after {
 	content:'';
 	width: 0;
 	height: 3px;
-	background: cyan;
+	background: var(--primary-color);
 	position: absolute;
 	left: 0;
 	bottom: -6px;
@@ -126,12 +123,12 @@ nav ul li a:hover::after {
 	margin-top: 8%;
 	font-size: 30px;
 	padding-top: 20px;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 .header-text h2 {
 	color: var(--secondary-color);
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	font-size: 35px;
 	font-weight: bold;
 	z-index: 1;
@@ -143,10 +140,6 @@ nav ul li a:hover::after {
 	font-size: 60px;
 	margin:auto;
 	padding: 0;
-}
-
-.header-text h1 span {
-	color:cyan;
 }
 
 .header-image img {
@@ -164,6 +157,7 @@ nav ul li a:hover::after {
 	padding-top: 55px;
 	margin-top: 50px;
 }
+
 .row {
 	display: flex;
 	justify-content: space-between;
@@ -202,7 +196,7 @@ nav ul li a:hover::after {
 .about-col-2 p {
 	font-size: 22px;
 	color: var(--secondary-color);
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
@@ -216,7 +210,7 @@ nav ul li a:hover::after {
 }
 
 .tab-titles p {
-	font-family:cursive;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 .tab-links {
@@ -251,11 +245,11 @@ nav ul li a:hover::after {
 	margin: 5px 0 0 -40px;
 	font-size: 18px;
 	color: var(--secondary-color);
-	font-family:cursive;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 .tab-contents ul li span {
-	color: cyan;
+	color: red;
 	font-size: 20px;
 }
 
@@ -311,7 +305,7 @@ nav ul li a:hover::after {
 	flex-direction: column;
 	padding: 0 0px;
 	text-align: center;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	font-size: 18px;
 	transition: height 0.5s;
 	color: var(--secondary-color);
@@ -342,7 +336,7 @@ nav ul li a:hover::after {
 	text-decoration: none;
 	color: var(--secondary-color);
 	transition:0.5s;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	font-size: 18px;
 	transform: translateY(5px);
 	cursor: pointer;
@@ -358,7 +352,7 @@ nav ul li a:hover::after {
 	text-decoration: none;
 	color: var(--secondary-color);
 	transition:0.5s;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	font-size: 18px;
 	transform: translateY(5px);
 	cursor: pointer;
@@ -409,7 +403,7 @@ nav ul li a:hover::after {
 	text-decoration: none;
 	color: var(--secondary-color);
 	transition: 0.5s;
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 	font-size: 20px;
 	transform: translateY(-5px);
 }
@@ -483,7 +477,7 @@ textarea {
 	color: var(--secondary-color);
 	font-size: 19px;
 	color:var(--primary-color);
-	font-family: cursive;
+	font-family: "Libre Franklin", sans-serif;
 }
 
 nav .fas {
@@ -509,6 +503,13 @@ nav .fas {
 
 /*Media queries*/
 @media only screen and (max-width:820px) {
+	.sub-title { 
+		font-size: 10px;
+	}
+
+}
+
+@media only screen and (max-width:820px) {
 	nav .fas {
 		display: block;
 		font-size: 25px;
@@ -528,7 +529,7 @@ nav .fas {
 	}
 
 	nav ul {
-		background: cyan;
+		background: var(--primary-color);
 		position: fixed;
 		top: 0;
 		right: 200%;
@@ -565,6 +566,10 @@ nav .fas {
 }
 
 @media only screen and (max-width:768px) {
+	.logo a {
+		margin-bottom: 64px;
+	}
+
 	nav .fas {
 		display: block;
 		font-size: 25px;
@@ -584,7 +589,7 @@ nav .fas {
 	}
 
 	nav ul {
-		background: cyan;
+		background: var(--primary-color);
 		position: fixed;
 		top: 0;
 		right: 200%;
@@ -604,6 +609,10 @@ nav .fas {
 		top: 25px;
 		left: 25px;
 		cursor: pointer;
+	}
+
+	.layer {
+		font-size: 16px;
 	}
 
 	.about-col-1 img {
@@ -670,7 +679,7 @@ nav .fas {
 	}
 
 	nav ul {
-		background: cyan;
+		background: var(--primary-color);
 		position: fixed;
 		top: 0;
 		right: 200%;
@@ -731,6 +740,14 @@ nav .fas {
 	nav img {
 		padding-left: 120px;
 	}
+
+	.logo a {
+		text-decoration: none;
+		font-weight: bolder;
+		font-size: 35px;
+		color: var(--secondary-color);
+		font-family: "Libre Franklin", sans-serif;
+	}
 }
 
 @media only screen and (max-width:414px) {
@@ -739,7 +756,7 @@ nav .fas {
     	font-weight: bolder;
     	font-size: 40px;
     	color: var(--secondary-color);
-    	font-family: cursive;
+    	font-family: "Libre Franklin", sans-serif;
 		margin-top: 3px;
 }
 	nav img {
@@ -761,9 +778,20 @@ nav .fas {
 }
 
 @media only screen and (max-width:375px) {
-	.contact-left, .contact-right {
-        flex-basis: 90%;
-    }
+	form input, form textarea {
+		width: 90%;
+	}
+
+	.container {
+		display: inline-block;
+		padding: 10px;
+	}
+	.contact-right {
+		display: inline-block;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
 }
 
 
